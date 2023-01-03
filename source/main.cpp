@@ -31,7 +31,7 @@ int main() {
     int y = size / 2;
     image_data[x + size * y] = colors[0]; // 1
     add_point(--x, y);                    // 3
-    for (int n = 0; n != size; ++n) {
+    for (int n = 1; n != size; ++n) {
       for (int j = 0; j != n; ++j) {
         add_point(++x, ++y);
       }
