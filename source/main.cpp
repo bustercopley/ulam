@@ -22,7 +22,7 @@ int main() {
     auto add_point = [&](int x, int y) {
       auto offset = x + size * y;
       auto color = colors[(int)sieve.at(sieve_index++)];
-      if (offset >= 0 && offset < size * size) {
+      if (0 <= x && x < size && 0 <= y && y < size) {
         image_data.at(offset) = color;
       }
     };
